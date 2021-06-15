@@ -3,9 +3,9 @@ layout: default
 ---
 
 <article>
-  <header>
+  <header class="my-5">
     <h1>{{ page.title }}</h1>
-    <time datetime="{{ page.date | date_to_xmlschema }}"><small>{{ page.date | date_to_string }}</small></time>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
   </header>
   {{ content }}
 </article>
