@@ -8,9 +8,9 @@ title: homepage
     {% for post in site.posts %}
     <div class="col">
       <div class="card h-100">
-        {% if pos.img %}
+        {% if post.img %}
         <img src="{{ post.img }}" alt="..." class="card-img-top">
-        {% endif%}
+        {% endif %}
         <div class="card-body">
           <h3 class="card-title">
             <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link text-dark text-decoration-none">
