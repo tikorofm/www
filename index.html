@@ -3,19 +3,21 @@ layout: default
 title: homepage
 ---
 
-<article class="my-3">
+<article class="my-5">
   <div class="row row-cols-1 row-cols-md-2 g-4">
     {% for post in site.posts %}
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
           <h3 class="card-title">
-            {{ post.title }}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link text-dark">
+              {{ post.title }}
+            </a>
           </h3>
           <p class="card-text">
             {{ post.content | truncatewords: 12 }}
           </p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="stretched-link">Readmore</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}" class="text-secondary">{{ post.date | date_to_string }}</time>
         </div>
       </div>
     </div>
