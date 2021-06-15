@@ -1,0 +1,15 @@
+title: www
+description: just a static website
+url: https://tikorofm.github.io/www
+baseurl: /www
+permalink: pretty
+timezone: Asia/Jakarta
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+author:
+  name: tikorofm
+  email: tikorofm@gmail.com
+version: 0.1.0
