@@ -3,4 +3,22 @@ layout: default
 title: homepage
 ---
 
-homepage
+<article class="my-3">
+  <div class="row">
+    {% for post in paginator.posts %}
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">
+            {{ post.title }}
+          </h3>
+          <p class="card-text">
+            {{ post.content | truncatewords: 12, "." }}
+          </p>
+          <a href="{{ post.url }}">Readmore</a>
+        </div>
+      </div>
+    </div>
+    {% endfor%}
+  </div>
+</article>
