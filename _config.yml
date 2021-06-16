@@ -1,8 +1,9 @@
 title: www
 description: just a static website
-url: https://tikorofm.github.io/www
+# url: https://tikorofm.github.io/www
 baseurl: /www
 permalink: pretty
+paginate: 4
 timezone: Asia/Jakarta
 plugins:
   - jekyll-seo-tag
